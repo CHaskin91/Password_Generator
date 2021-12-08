@@ -16,7 +16,13 @@ function generatePassword() {
 
     // Character Length Prompt/
     var length = prompt("How many characters would you like in your password? Must be between 8 and 128.");
-}
+
+    // Confirms for Numbers, Lowercase, Uppercase, and Symbols
+    var numbers = confirm("Would you like numbers in your password?");
+    var lowerCase = confirm("Would you like lowercase letters in your password?");
+    var upperCase = confirm("Would you like uppercase letters in your password?");
+    var symbols = confirm("Would you like special characters in your password?");
+  }
 
 
 
