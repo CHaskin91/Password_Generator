@@ -11,3 +11,7 @@ When needing a random, new, secure password.  User will be prompted for password
 When user answers each prompt, the input should be validated and at least one character type should be selected. 
 When all prompts are answered, a password is generated that matches the selected criteria.
 When the password is generated, it is displayed in an alert or written to the page.
+
+## Resources
+* Password Special Characters/Symbols [https://owasp.org/www-community/password-special-characters]
+* 
