@@ -1,8 +1,8 @@
 # Password Generator
 
 ## Links
-* 
-* 
+* Password Generator Live URL []
+* GitHub Repo URL [https://github.com/CHaskin91/Password_Generator]
 
 ## User Info
 When needing a random, new, secure password.  User will be prompted for password criteria.  Criteria includes:

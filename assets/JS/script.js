@@ -13,10 +13,13 @@ function generatePassword() {
     var numberArray = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
     var symbolArray = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "=", "+", ".", ",", "?", ";", ":"];
 
-
     // Character Length Prompt/
     var length = prompt("How many characters would you like in your password? Must be between 8 and 128.");
-
+    if (length < 8) {
+      alert("Must be 8 or more characters");
+      return(generatePassword());
+    }
+    
     // Confirms for Numbers, Lowercase, Uppercase, and Symbols
     var numbers = confirm("Would you like numbers in your password?");
     var lowerCase = confirm("Would you like lowercase letters in your password?");
