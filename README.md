@@ -1,7 +1,7 @@
 # Password Generator
 ![image](https://github.com/CHaskin91/Password_Generator/blob/main/assets/Images/Screenshot.PNG)
 ## Links
-* Password Generator Live URL []
+* Password Generator Live URL [https://chaskin91.github.io/Password_Generator/]
 * GitHub Repo URL [https://github.com/CHaskin91/Password_Generator]
 
 ## User Info
