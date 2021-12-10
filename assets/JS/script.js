@@ -9,6 +9,8 @@ function generatePassword() {
     var numberArray = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
     var symbolArray = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "=", "+", ".", ",", "?", ";", ":"];
 
+    var combinedArray = [];
+    var userArray = [];
     // Character Length Prompt/
     var length = prompt("How many characters would you like in your password? Must be between 8 and 128.");
     if (length < 8) {
@@ -26,12 +28,28 @@ function generatePassword() {
     var lowerCase = confirm("Would you like lowercase letters in your password?");
     var upperCase = confirm("Would you like uppercase letters in your password?");
     var symbols = confirm("Would you like special characters in your password?");
+
+    // If Statements to combine the Selected Arrays.
+    if (numbers === true) {
+      combinedArray = combinedArray.concat(numberArray);
+    }
+    if (lowerCase === true) {
+      combinedArray = combinedArray.concat(lowerArray);
+    }
+    if (upperCase === true) {
+      combinedArray = combinedArray.concat(upperArray);
+    }
+    if (symbols === true) {
+      combinedArray = combinedArray.concat(symbolArray);
+    }
+
+    // Create a for loop that will generate the length provided by the user.
+    // Push and Join methods add the elements from the combined array to a new array.
+    for (var i=0; i < length; i++) {
+      userArray.push (combinedArray[Math.floor(Math.random() * combinedArray.length)]);
+    }
+    return userArray.join('') ;
   }
-
-
-
-
-// Character Type Prompt
 
 // Write password to the #password input
 function writePassword() {
