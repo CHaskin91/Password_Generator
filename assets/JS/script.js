@@ -35,7 +35,7 @@ function generatePassword() {
       combinedArray = combinedArray.concat(numberArray);
     }
     if (lowerCase === true) {
-      combinedArray = combinedArray.concat(lowerArray);
+       combinedArray = combinedArray.concat(lowerArray);
     }
     if (upperCase === true) {
       combinedArray = combinedArray.concat(upperArray);
